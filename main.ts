@@ -1,0 +1,1 @@
+WarriorPayer.warrior()
