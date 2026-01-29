@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="SQq6__w7nPs,-GZffT`Z" x="20" y="20"><statement name="HANDLER"><block type="WarriorPayer_warrior" id="9_U].hHbW;D5ALulG^,y"></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="SQq6__w7nPs,-GZffT`Z" x="0" y="0"><statement name="HANDLER"><block type="WarriorPayer_warrior" id="9_U].hHbW;D5ALulG^,y"></block></statement></block></xml>

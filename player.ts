@@ -7,7 +7,7 @@
  */
 
 //% color="#dc1010" weight=100
-namespace WarriorPayer {
+namespace WarriorPlayer {
     //% block
     export function warrior() {
         let direction = 0

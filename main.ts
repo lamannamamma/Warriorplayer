@@ -1,1 +1,1 @@
-WarriorPayer.warrior()
+WarriorPlayer.warrior()
