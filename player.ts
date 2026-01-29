@@ -9,7 +9,10 @@
 //% color="#dc1010" weight=100
 namespace WarriorPlayer {
     //% block
-    export function warrior() {
+    //% block="create warrior"
+    //% blockSetVariable=mySprite
+    //% icon="\uf004" // Add a heart icon next to the name
+    export function warrior(): Sprite {
         let direction = 0
         let mySprite = sprites.create(img`
             ................................
@@ -668,6 +671,7 @@ namespace WarriorPlayer {
                 }
             }
         })
+        return mySprite;
     }
 
 
