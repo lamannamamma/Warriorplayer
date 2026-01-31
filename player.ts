@@ -9,8 +9,8 @@
 //% color="#dc1010" weight=100 icon="\uf0e7"
 namespace WarriorPlayer {
     //% block
-    //% block="create warrior"
-    //% blockSetVariable=Warrior
+    //% block="create BoyWarrior"
+    //% blockSetVariable=BoyWarrior
     //% icon="\uf0e7"
     export function warrior(): Sprite {
         let direction = 0
@@ -673,7 +673,251 @@ namespace WarriorPlayer {
         })
         return mySprite;
     }
+    //% block
+    //% block="create GirlWarrior"
+    //% blockSetVariable=GirlWarrior
+    //% icon="\uf0e7"
+    export function Girlwarrior1(): Sprite {
+        scene.setBackgroundColor(9)
+        let GirlWarrior = sprites.create(img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f d 8 d 8 f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a 5 . . . . . . . . 
+    c c 1 c c 5 5 b . . . . . . . . 
+    c 2 c 2 c b b c . e . . . . . . 
+    a 2 c 2 c b b c e e b b b b b b 
+    a c b c a c c a . e . . . . . . 
+    . . c f . f f . . . . . . . . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
+        controller.moveSprite(GirlWarrior, 50, 0)
+        GirlWarrior.ay = 50
+        characterAnimations.loopFrames(
+            GirlWarrior,
+    [img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f d 8 d 8 f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a 5 . . . . . . . . 
+    c c 1 c c 5 5 b . . . . . . . . 
+    c 2 c 2 c b b c . e . . . . . . 
+    a 2 c 2 c b b c e e b b b b b b 
+    a c b c a c c a . e . . . . . . 
+    . . c f . f f . . . . . . . . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f f d d d f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a a f f . . . . . . 
+    c c b c c 5 5 c . . . . . . . . 
+    c 2 c 2 c b b b . e . . . . . . 
+    c 2 c 2 c b b b e e b b b b b b 
+    . c b c b a a c . e . . . . . . 
+    . . c c . . . f . . . . . . . . 
+    b b b f b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f d 8 d 8 f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a 5 . . . . . . . . 
+    c c 1 c c 5 5 b . . . . . . . . 
+    c 2 c 2 c b b c . e . . . . . . 
+    c 2 c 2 c b b c e e b b b b b b 
+    a c b c . c c . . e . . . . . . 
+    . . c f . f f . . . . . . . . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f d 8 d 8 f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a 5 . . . . . . . . 
+    c c 1 c c 5 5 b . . . . . . . . 
+    c 2 c 2 c b b c . e . . . . . . 
+    a 2 c 2 c b b c e e b b b b b b 
+    a c b c a a c c . e . . . . . . 
+    . . c f . . f f . . . . . . . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f f d d d f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a a f f . . . . . . 
+    c c b c c 5 5 c . . . . . . . . 
+    c 2 c 2 c b b b . e . . . . . . 
+    c 2 c 2 c b b b e e b b b b b b 
+    . c b c b c c . . e . . . . . . 
+    . . c . f c c . . . . . . . . . 
+    b b b b b f f b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . f f f f f . . . . . . . 
+    . . . f f f f f f f . . . . . . 
+    . . f f f f f f f f . . . . . . 
+    . . f f f d 8 d 8 f . . . . . . 
+    . . f f d d 8 d 8 f . . . . . . 
+    . . f f d d d d d f . . . . . . 
+    c c c c c d d d f f . . . . . . 
+    c 2 c 2 c a a 5 . . . . . . . . 
+    c c 1 c c 5 5 b . . . . . . . . 
+    c 2 c 2 c b b c . e . . . . . . 
+    a 2 c 2 c b b c e e b b b b b b 
+    . c b c b c c . . e . . . . . . 
+    . . c . f f f . . . . . . . . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `],
+            200,
+            characterAnimations.rule(Predicate.MovingRight)
+        )
+        characterAnimations.loopFrames(
+            GirlWarrior,
+            [img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f 8 d 8 d f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . . . 5 a a c 2 c 2 c 
+    . . . . . . . . b 5 5 c c 1 c c 
+    . . . . . . e . c b b c 2 c 2 c 
+    b b b b b b e e c b b c 2 c 2 a 
+    . . . . . . e . a c c a c b c a 
+    . . . . . . . . . f f . f c . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f d d d f f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . f f a a a c 2 c 2 c 
+    . . . . . . . . c 5 5 c c b c c 
+    . . . . . . e . b b b c 2 c 2 c 
+    b b b b b b e e b b b c 2 c 2 c 
+    . . . . . . e . c a a b c b c . 
+    . . . . . . . . f . . . c c . . 
+    b b b b b b b b b b b b f b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f 8 d 8 d f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . . . 5 a a c 2 c 2 c 
+    . . . . . . . . b 5 5 c c 1 c c 
+    . . . . . . e . c b b c 2 c 2 c 
+    b b b b b b e e c b b c 2 c 2 c 
+    . . . . . . e . . c c . c b c a 
+    . . . . . . . . . f f . f c . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f 8 d 8 d f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . . . 5 a a c 2 c 2 c 
+    . . . . . . . . b 5 5 c c 1 c c 
+    . . . . . . e . c b b c 2 c 2 c 
+    b b b b b b e e c b b c 2 c 2 a 
+    . . . . . . e . c c a a c b c a 
+    . . . . . . . . f f . . f c . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f d d d f f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . f f a a a c 2 c 2 c 
+    . . . . . . . . c 5 5 c c b c c 
+    . . . . . . e . b b b c 2 c 2 c 
+    b b b b b b e e b b b c 2 c 2 c 
+    . . . . . . e . . c c b c b c . 
+    . . . . . . . . . c c f . c . . 
+    b b b b b b b b b f f b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, img`
+    . . . . . . . f f f f f . . . . 
+    . . . . . . f f f f f f f . . . 
+    . . . . . . f f f f f f f f . . 
+    . . . . . . f 8 d 8 d f f f . . 
+    . . . . . . f 8 d 8 d d f f . . 
+    . . . . . . f d d d d d f f . . 
+    . . . . . . f f d d d c c c c c 
+    . . . . . . . . 5 a a c 2 c 2 c 
+    . . . . . . . . b 5 5 c c 1 c c 
+    . . . . . . e . c b b c 2 c 2 c 
+    b b b b b b e e c b b c 2 c 2 a 
+    . . . . . . e . . c c b c b c . 
+    . . . . . . . . . f f f . c . . 
+    b b b b b b b b b b b b b b b b 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `],
+            200,
+            characterAnimations.rule(Predicate.MovingLeft)
+        )
 
+        return GirlWarrior;
+    }
 
 
 
