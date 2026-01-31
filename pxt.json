@@ -2,7 +2,6 @@
     "name": "WarriorPayer ",
     "version": "0.3.0",
     "description": "This extension adds a cool warrior to your game!",
-    "icon": "./warrior.png",
     "dependencies": {
         "device": "*",
         "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2",
@@ -25,5 +24,6 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "icon": "./warrior.png"
 }
