@@ -1,7 +1,7 @@
 {
     "name": "WarriorPayer ",
     "version": "0.3.0",
-    "description": "",
+    "description": "This extension adds a cool warrior to your game!",
     "dependencies": {
         "device": "*",
         "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.0.2",
