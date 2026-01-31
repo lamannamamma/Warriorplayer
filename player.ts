@@ -11,6 +11,7 @@ namespace WarriorPlayer {
     //% block
     //% block="create warrior"
     //% blockSetVariable=mySprite
+    //% icon="\uf0e7"
     export function warrior(): Sprite {
         let direction = 0
         let mySprite = sprites.create(img`
