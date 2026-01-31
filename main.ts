@@ -1,1 +1,1 @@
-
+let mySprite = WarriorPlayer.warrior()

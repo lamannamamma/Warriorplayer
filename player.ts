@@ -6,12 +6,11 @@
  * generated for an **exported** function.
  */
 
-//% color="#dc1010" weight=100
+//% color="#dc1010" weight=100 icon="\uf0e7"
 namespace WarriorPlayer {
     //% block
     //% block="create warrior"
     //% blockSetVariable=mySprite
-    //% icon="\uf004" // Add a heart icon next to the name
     export function warrior(): Sprite {
         let direction = 0
         let mySprite = sprites.create(img`
